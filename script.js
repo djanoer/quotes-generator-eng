@@ -10,7 +10,7 @@ function randomQuote() {
   quoteBtn.classList.add('loading');
   quoteBtn.innerText = 'Loading Quote...';
   // fatching random quotes/data from the API and parsing  it into Javascript object
-  fetch('http://api.quotable.io/random')
+  fetch('https://api.quotable.io/random')
     .then((res) => res.json())
     .then((result) => {
       console.log(result);
